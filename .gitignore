@@ -1,0 +1,10 @@
+# entorno y PyCharm
+.venv/
+venv/
+.idea/
+__pycache__/
+*.pyc
+
+# pruebas rápidas y cuadros sueltos (los videos finales sí se guardan)
+videos/*_rapido.mp4
+videos/*s.png
