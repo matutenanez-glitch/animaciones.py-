@@ -382,7 +382,7 @@ def main():
     salida = SALIDA.with_name(SALIDA.stem + "_rapido.mp4") if args.rapido else SALIDA
     escritor = imageio_ffmpeg.write_frames(
         str(salida), (ancho, alto), fps=FPS, codec="libx264", quality=None,
-        macro_block_size=8, pix_fmt_in="rgb24", pix_fmt_out="yuv420p",
+        macro_block_size=4, pix_fmt_in="rgb24", pix_fmt_out="yuv420p",
         output_params=["-crf", "21", "-preset", "slow", "-profile:v", "high",
                        "-movflags", "+faststart"],
     )
